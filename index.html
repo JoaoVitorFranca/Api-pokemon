@@ -9,61 +9,38 @@
             crossorigin="anonymous"></script>
     <!-- Adicionando Javascript -->
     <script src="script.js"> </script>
-    
   </head>
 
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-1">         
-        </div>
-        <div class="col-10">
-          <div class="jumbotron" style="margin-top: 20px; margin-bottom: 20px;">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="Pokemon Logo">
-            <br>
-            <br>
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Insira o nome do pokémon" aria-label="Insira o nome do pokémon." aria-describedby="button-addon2" id="txtCep">
-              <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button"id="search" id="button-addon2">Pesquisar</button>
-              </div>
-            </div>
-            <hr class="my-4">
-            <form method="get" action=".">
-              <div class="container">
-                <div class="row">
-                  <div class="col-8">
-                    <h2>Nome</h2>
-                    <p id="nome"></p>
-                    <h3>Tipo</h3>
-                    <p id="tipo"></p>
-                  </div>                 
-                  <div class="col-4">
-                    <img src=""id="foto">
-                    <img src=""id="costas">
-                  </div>
-                </div>
-              </div>
-              <div class="container">
-                <div class="row">
-                  <div class="col-11">
-                    <h3>Golpes</h3>
-                    <p id="golpes"></p>
-                    <h3>Peso</h3>
-                    <p id="peso"></p>
-                    <h3> Altura</h3> 
-                    <p id="Altura"></p>
-                  </div>
-                  <div class="col-1">
-                  </div>
-                </div>
-              </div>
-            </form>
+      <div class="jumbotron" style="margin-top: 20px; margin-bottom: 20px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="Pokemon Logo">
+        <!--Pesquisa-->
+        <div class="input-group mb-3" style="margin-top: 20px;">
+          <input type="text" class="form-control" placeholder="Insira o nome do pokémon" aria-label="Insira o nome do pokémon." aria-describedby="button-addon2" id="txtReq">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button"id="search" id="button-addon2">Pesquisar</button>
           </div>
         </div>
-        <div class="col-1">
+      <!--Resultado-->
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <p id="nome"></p>
+            <p id="tipo"></p>
+          </div>                 
+          <div class="col-4">
+            <img src=""id="foto">
+            <img src=""id="costas">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-11">
+            <p id="golpes"></p>
+            <p id="peso"></p>
+            <p id="Altura"></p>
+          </div>
         </div>
       </div>
-    </div>
   </body>
 </html>
